@@ -45,12 +45,12 @@ const MODE_SETTINGS = {
   },
   normal: {
     timeLimit: 30,
-    targetScore: 30,
+    targetScore: 45,
     spawnIntervalMs: 600,
-    badDropPenaltyMultiplier: 1,
+    badDropPenaltyMultiplier: 2,
     speedMode: "size-based",
-    fastestDropDuration: 2.4,
-    slowestDropDuration: 4.4,
+    fastestDropDuration: 1.5,
+    slowestDropDuration: 2.5,
   },
   hard: {
     timeLimit: 25,

@@ -398,7 +398,7 @@ body {
     }
 
     .mode-controls {
-        order: 1;
+        order: 4;
     }
 
     .timer {
@@ -406,11 +406,11 @@ body {
     }
 
     .score {
-        order: 3;
+        order: 1;
     }
 
     .goal {
-        order: 4;
+        order: 3;
     }
 
     .panel-buttons {
