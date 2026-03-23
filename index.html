@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Drop Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1 class="game-title">Water Drop</h1>
+        <p class="game-tagline">Catch the good drops, avoid the bad ones!</p>
+        <div class="score-panel">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="timer">Time: <span id="time">30</span>s</div>
+            <div class="panel-buttons">
+                <button id="reset-btn">Reset</button>
+                <button id="start-btn">Start Game</button>
+            </div>
+        </div>
+        
+        <div id="game-container">
+            <div class="scene-background">
+                <div class="hill hill-a"></div>
+                <div class="hill hill-b"></div>
+            </div>
+
+            <div id="drop-layer"></div>
+
+            <div id="collector-pointer" class="collector-pointer hidden" aria-hidden="true"></div>
+
+            <div id="game-over" class="game-over-screen hidden">
+                <p id="game-over-message"></p>
+                <button id="play-again-btn">Play Again</button>
+                <a class="game-over-link" href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer">
+                    Learn More about Charity: Water
+                </a>
+            </div>
+
+            <div class="scene-foreground" aria-hidden="true">
+                <div class="brand-strip">
+                    <img class="brand-logo" src="img/cw_logo-horizontal.png" alt="charity: water">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
