@@ -13,11 +13,21 @@
         <div class="score-panel">
             <div class="score">Score: <span id="score">0</span></div>
             <div class="timer">Time: <span id="time">30</span>s</div>
+            <div class="mode-controls">
+                <label for="mode-select">Mode:</label>
+                <select id="mode-select" aria-label="Game difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal">Normal</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <div class="goal">Goal: <span id="goal-score">31</span></div>
             <div class="panel-buttons">
                 <button id="reset-btn">Reset</button>
                 <button id="start-btn">Start Game</button>
             </div>
         </div>
+        <p id="milestone-message" class="milestone-message" aria-live="polite"></p>
         
         <div id="game-container">
             <div class="scene-background">
@@ -43,6 +53,15 @@
                 </div>
             </div>
         </div>
+
+        <footer class="game-footer" aria-label="charity: water links">
+            <a class="game-footer-link" href="https://www.charitywater.org" target="_blank" rel="noopener noreferrer">
+                About Charity: Water
+            </a>
+            <a class="game-footer-link" href="https://www.charitywater.org/donate" target="_blank" rel="noopener noreferrer">
+                Donate
+            </a>
+        </footer>
     </div>
 
 
